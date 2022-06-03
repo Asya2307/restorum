@@ -1,0 +1,192 @@
+.slider {
+    &__main {
+        width: 100%;
+        position: relative;
+
+        &-inner {
+            max-width: 708px;
+            width: 100%;
+
+            @media screen and (max-width: 1024px) {
+                max-width: 100%;
+            }
+        }
+
+        &-slide {
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(52, 51, 51, 0.56);
+            }
+        }
+
+        &-content {
+            position: relative;
+            z-index: 1;
+            height: 689px;
+            display: flex;
+            padding-top: 112px;
+            padding-bottom: 40px;
+
+            @media screen and (max-width: 1024px) {
+                position: relative;
+                height: 423px;
+                padding-top: 80px;
+            }
+
+            @media screen and (max-width: 650px) {
+                position: relative;
+                height: 550px;
+                padding-top: 80px;
+            }
+        }
+
+        &-subtitle {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            color: #fff;
+            display: block;
+            max-width: 88%;
+            margin-bottom: 50px;
+
+            @media screen and (max-width: 1024px) {
+                max-width: 100%;
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 25px;
+            }
+        }
+
+
+        &-nav {
+            position: absolute;
+            width: 100%;
+            bottom: 170px;
+            z-index: 1;
+
+            &--reviews {
+                position: unset;
+            }
+
+            @media screen and (max-width: 1024px) {
+                bottom: unset;
+                top: 30px;
+            }
+        }
+
+        &-arrow {
+            display: block;
+            width: 24px;
+            height: 21px;
+            background: transparent;
+            background-repeat: no-repeat;
+            background-image: url(/img/sprites/sprite.svg#arrow);
+            background-position: center;
+            background-size: contain;
+            border: none;
+            padding: 0;
+
+            &--prev {
+                transform: rotate(-180deg);
+            }
+
+            &-wrap {
+                display: flex;
+                align-items: center;
+
+                &--center {
+                    justify-content: center;
+                    padding-top: 42px;
+                }
+            }
+
+            &:disabled {
+                opacity: .4;
+            }
+        }
+
+        &-pagination {
+            display: flex;
+            align-items: center;
+            margin: 0 18px;
+
+            .swiper-pagination-bullet {
+                display: block;
+                border: 2px solid #FFFFFF;
+                width: 12px;
+                height: 12px;
+                margin-right: 12px;
+                transition: $transition;
+                background-color: transparent;
+                opacity: 1;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        top: 0;
+        left: calc((100%/4) *3 + 15px);
+        display: flex;
+        z-index: 1;
+
+        &-arrow {
+            width: 96px;
+            height: 60px;
+            background: #EAF5FC;
+            background-image: url(/img/sprites/sprite.svg#arrow-prm);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 25px;
+            margin-right: 17px;
+            border: none;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &--next {
+                transform: rotate(180deg);
+            }
+        }
+
+        @media screen and (max-width: 1280px) {
+            left: calc((100%/3) * 2 + 15px);
+        }
+
+        @media screen and (max-width: 1150px) {
+            &-arrow {
+                width: 63px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            left: unset;
+            right: 15px;
+        }
+
+        @media screen and (max-width: 650px) {
+            left: 15px;
+            right: unset;
+        }
+    }
+}

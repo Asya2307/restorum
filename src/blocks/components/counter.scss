@@ -1,0 +1,93 @@
+.counter {
+    display: flex;
+    background: #f3fafd;
+    border-radius: 3px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.counter__wrap {
+    max-width: 210px;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.counter__btn {
+    min-width: 33px;
+    height: 33px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow:  0 0 40px rgba(205, 217, 222, 0.56);
+
+}
+
+.counter__btn svg {
+    fill: #008ed5;
+    transition: $transition;
+}
+
+.counter__btn:hover {
+    background-color: #008ed5;
+}
+
+.counter__btn:hover svg {
+   fill: #fff;
+}
+
+.counter__btn:disabled svg {
+    fill: #c6cfd3;
+}
+
+.counter__btn:disabled:hover {
+    cursor: default;
+    background-color: #fff;
+}
+
+.counter__input {
+    position: relative;
+    top: 1px;
+    max-width: 13px;
+    text-align: right;
+    background: transparent;
+    border: none;
+    width: auto;
+    outline: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #00161f;
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.counter__input::placeholder,
+.counter__text {
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00161f;
+}
+
+.counter__text {
+    position: relative;
+    top: 1px;
+}
+
+.counter__input:focus {
+    border: 1px solid #F6F4F8;
+    background-color: #fff;
+}
+
+.coutner__wrap {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

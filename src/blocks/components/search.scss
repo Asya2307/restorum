@@ -1,0 +1,38 @@
+.search {
+    &__modal {
+        position: relative;
+
+        &-wrap {
+            width: 100%;
+            padding-left: 38px;
+        }
+    }
+
+    &__input {
+        background: #F4F7F9;
+        border-radius: 3px;
+        border: none;
+        color: #fff;
+        width: 100%;
+        padding: 22px 40px 22px 13px;
+        font-size: 14px;
+        line-height: 19px;
+        color: #486573;
+        text-overflow: ellipsis;
+
+        &::placeholder {
+            color: #486573;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        @media screen and (max-width: 1024px) {
+           padding-top: 12px;
+           padding-bottom: 12px;
+        }
+
+        @media screen and (max-width: 650px) {
+            padding-right: 65px;
+         }
+    }
+}

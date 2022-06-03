@@ -1,0 +1,52 @@
+.breadcrumbs {
+    padding: 29px 0;
+
+    &__list {
+        display: flex;
+        white-space: nowrap;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        color: #a5b4bb;
+        text-transform: uppercase;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 7px;
+            margin: 0 11px;
+            background-image: url(/img/img/icons/arrow-bread.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            position: relative;
+            top: -1px;
+        }
+
+        &:last-child {
+            &:after {
+                content: none;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        color: #a5b4bb;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 1px;
+        transition: $transition;
+
+        &:hover {
+            border-bottom-color:#a5b4bb;
+        }
+    }
+
+    span {
+        display: block;
+    }
+}

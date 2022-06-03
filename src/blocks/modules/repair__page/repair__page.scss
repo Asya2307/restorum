@@ -1,0 +1,143 @@
+.repair {
+    &__page {
+        padding-top: 237px;
+        padding-bottom: 128px;
+        background-color: $main-color;
+
+        &-inner {
+            display: flex;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            @media screen and (max-width: 960px) {
+                margin: 0;
+                flex-direction: column;
+            }
+        }
+
+        &-item {
+            position: relative;
+            width: 100%;
+            max-width: calc(50% - 30px);
+            margin-left: 15px;
+            margin-right: 15px;
+            border-radius: 3px;
+            overflow: hidden;
+
+            &--prm {
+
+                .repair__page-back {
+                    svg {
+                        path {
+                            fill: #189ADB;
+                        }
+                    }
+
+                    &:after {
+                        background-color: $prm-color;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 960px) {
+                max-width: 100%;
+                margin-right: 0;
+                margin-left: 0;
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-back {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            svg {
+                z-index: 1;
+                opacity: .2;
+                path {
+                    fill: $main-color;
+                    fill-opacity: 0.88;
+                }
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: #132934;
+            }
+        }
+
+        &-container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1;
+        }
+
+        &-name {
+            font-weight: 800;
+            font-size: 35px;
+            display: block;
+            margin-bottom: 30px;
+            color: #fff;
+
+            @media screen and (max-width: 650px) {
+                font-size: 24px;
+            }
+        }
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+
+            @media screen and (max-width: 650px) {
+                padding: 20px 40px;
+                width: 100%;
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        &-img {
+
+            img {
+                display: block;
+            }
+
+            
+            @media screen and (max-width: 650px) {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: right;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 150px;
+            padding-bottom: 60px;
+        }
+    }
+}

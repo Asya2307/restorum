@@ -1,0 +1,25 @@
+@import "components/svg";
+@import "components/logo";
+@import "components/btn";
+@import "components/search";
+@import "components/modal";
+@import "components/filter";
+@import "components/pagination";
+@import "components/counter";
+
+
+
+@import "modules/header/header";
+@import "modules/navigation/navigation";
+@import "modules/slider__main/slider__main";
+@import "modules/catalog__page/catalog__page";
+@import "modules/product__page/product__page";
+@import "modules/repair__page/repair__page";
+@import "modules/about/about";
+@import "modules/about/reviews__page";
+@import "modules/blog/blog__page";
+@import "modules/map/map";
+@import "modules/breadcrumbs/breadcrumbs";
+@import "modules/common__accordeon/common__accordion";
+@import "modules/card/card";
+@import "modules/footer/footer"
