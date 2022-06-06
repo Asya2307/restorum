@@ -6,7 +6,7 @@
     </div>
     
     <div class="filter__wrap">
-        <form action="" class="filter">
+        <form action="" class="filter js-filter">
             <div class="filter__box">
                 <div class="filter__item">
                     <span class="filter__name">
@@ -17,18 +17,7 @@
                             <span >
                                 Цене
                             </span>
-                            <div class="filter__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 63.9 122.88" style="enable-background:new 0 0 63.9 122.88" xml:space="preserve">
-                                    <style type="text/css">
-                                        .st0 {
-                                            fill-rule: evenodd;
-                                            clip-rule: evenodd;
-                                        }
-                                    </style>
-                                    <g>
-                                        <polygon class="st0" points="0,61.44 63.9,122.88 63.9,0 0,61.44"></polygon>
-                                    </g>
-                                </svg>
+                            <div class="filter__icon filter__icon--up">
                             </div>
                         </button>
                         <button class="filter__sort js-filter-sort">
@@ -36,17 +25,6 @@
                                 Названию
                             </span>
                             <div class="filter__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 63.9 122.88" style="enable-background:new 0 0 63.9 122.88" xml:space="preserve">
-                                    <style type="text/css">
-                                        .st0 {
-                                            fill-rule: evenodd;
-                                            clip-rule: evenodd;
-                                        }
-                                    </style>
-                                    <g>
-                                        <polygon class="st0" points="0,61.44 63.9,122.88 63.9,0 0,61.44"></polygon>
-                                    </g>
-                                </svg>
                             </div>
                         </button>
                     </div>

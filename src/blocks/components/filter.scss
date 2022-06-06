@@ -6,9 +6,9 @@
         display: flex;
         align-items: center;
         background-color: #f3fafd;
-        padding: 8px 11px 10px 16px;
-        margin-right: 11px;
-        border-radius: 3px;
+        padding: 8px 7px 8px 17px;
+        margin-right: 18px;
+        border-radius: 2px;
 
         &:last-child {
             margin-right: 0;
@@ -61,21 +61,6 @@
         }
     }
 
-    &__sort {
-        color: #00161f;
-        border-bottom: 1px dashed #00161f;
-        display: block;
-        margin-right: 20px;
-
-        @media screen and (max-width: 1440px) {
-            margin-right: 0;
-            margin-bottom: 13px;
-        }
-
-        @media screen and (max-width: 650px) {
-            margin-bottom: 0px;
-        }
-    }
 
     &__button {
         display: flex;
@@ -84,9 +69,10 @@
         background-color: transparent;
         transition: $transition;
         color: $main-color;
-        padding: 5px 7px;
-        border-radius: 3px;
+        padding: 3.5px 12px;
+        border-radius: 2px;
         margin-right: 2px;
+        font-size: 14px;
 
         &:last-child {
             margin-right: 0;
@@ -164,7 +150,7 @@
 
     &__select {
         &-wrap {
-            width: 210px;
+            width: 200px;
 
             @media screen and (max-width: 1024px) {
                 width: 100%;
@@ -177,19 +163,17 @@
         align-items: center;
         background-color: transparent;
         border: none;
-        margin-right: 10px;
-        padding: 3px 6px;
-        border-radius: 3px;
-
-        &:last-child {
-            margin-right: 0;
-        }
+        padding: 4px 10px;
+        border-radius: 2px;
+        color: #00161f;
 
         span {
             color: #00161f;
             border-bottom: 1px dashed #00161f;
             display: block;
             transition: .3s;
+            margin-right: 7px;
+            font-size: 14px;
         }
 
         &-box {
@@ -199,10 +183,7 @@
 
         &.active {
             background-color: #d5e3e9;
-            padding: 4px 11px;
-            font-size: 13px;
             
-
             span {
                 border-bottom: none;
                 color: #008ad0;
@@ -219,6 +200,15 @@
                 border-bottom-color: #008ad0;
             }
         }
+
+        @media screen and (max-width: 1440px) {
+            margin-right: 0;
+            margin-bottom: 13px;
+        }
+
+        @media screen and (max-width: 650px) {
+            margin-bottom: 0px;
+        }
     }
 
 
@@ -226,11 +216,14 @@
         display: none;
         height: 10px;
         width: 7px;
-        transform: rotate(-90deg);
-        margin: 0 5px;
+        background-image: url(/img/sprites/sprite.svg#filter__arrow);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
 
-        svg  polygon {
-            fill: #aab9c0;
+        &--up {
+            transform: rotate(180deg);
         }
     }
 
@@ -288,12 +281,14 @@
     background-color: #f3fafd;
     border-radius: 3px;
     border: none;
-    height: 42px;
+    height: 40px;
 }
 
 .select2-container--default .select2-selection--single.filter-main .select2-selection__rendered {
-    line-height: 42px;
+    line-height: 40px;
     color: #00161f;
+    font-size: 14px;
+    padding-left: 15px;
 }
 
 .select2-selection--single.filter-main .select2-selection__arrow {

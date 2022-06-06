@@ -7,7 +7,6 @@
     background-color: #f3fafd;
 
     &-list {
-        
         padding: 8px;
         width: 100%;
         border-radius: 3px;
@@ -44,7 +43,7 @@
         }
 
         &--level2 {
-            padding: 15px 22px;
+            padding: 12px 22px 12px 22px;
         }
     }
 
@@ -52,10 +51,11 @@
         width: 100%;
         border: none;
         padding: 16px 24px 22px 24px;
-        background-color: $prm-color;
+        background-color:  #008ad0;
         border-radius: 3px;
         transition: $transition;
         text-align: left;
+        font-weight: 600;
 
         span {
             color: #fff;

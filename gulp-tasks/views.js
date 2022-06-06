@@ -21,6 +21,5 @@ gulp.task("views", () => {
         .pipe(gulpif(production, replace(".js", ".min.js")))
         .pipe(gulp.dest(paths.views.dist))
         .pipe(browsersync.stream({
-            proxy: 'shintech'
         }));
 });

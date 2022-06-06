@@ -38,15 +38,16 @@
     &__catalog {
         display: flex;
         align-items: center;
-        background-color: transparent;
+        border-radius: 3px;
+        background-color: #008ad0;
         border: none;
-        height: 63px;
+        height: 48px;
         transition: 0.3s;
         font-weight: 800;
         font-size: 18px;
         line-height: 25px;
         color: #fff;
-        padding: 19px 40px;
+        padding: 19px 16px;
         width: 100%;
         max-width: 311px;
         transition: $transition;;
@@ -69,11 +70,18 @@
             padding-top: 0px;
             padding-bottom: 0px;
             height: 20px;
+            padding-left: 19px;
+            padding-right: 0;
+            max-width: unset;
+            width: unset;
+            white-space: nowrap;
         }
 
         @media screen and (max-width: 650px) {
             max-width: 20px;
             padding: 0;
+            margin-left: 10px;
+            margin-right: 10px;
 
             span {
                 display: none;
@@ -95,6 +103,10 @@
         background-size: 29px;
         background-position: center;
         border: none;
+
+        @media screen and (max-width: 650px) {
+            width: 45px;
+        }
     }
 
     &__cab {

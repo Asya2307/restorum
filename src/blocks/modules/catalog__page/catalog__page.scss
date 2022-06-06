@@ -145,11 +145,7 @@
             .product__page-container--catalog {
                 display: flex;
                 flex-direction: row;
-                padding-left: 40px;
-                padding-left: 38px;
-                padding-right: 48px;
-                padding-top: 37px;
-                padding-bottom: 30px;
+                padding: 33px;
 
                 @media screen and (max-width: 650px) {
                     flex-direction: column;
@@ -158,10 +154,10 @@
             }
 
             .product__page-img {
-                height: 80px;
                 margin: 0;
-                max-width: 100px;
-                margin-right: 30px;
+                max-width: 104px;
+                height: 95px;
+                margin-right: 33px;
 
                 img {
                     display: block;
@@ -253,6 +249,10 @@
                 @media screen and (max-width: 1280px) {
                     margin-bottom: 10px;
                 }
+            }
+
+            .product__page-container--catalog .product__page-basket {
+                top: 0;
             }
         }
 

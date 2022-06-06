@@ -27,6 +27,7 @@
 
             &.active {
                 transform: translateX(0);
+                overflow: auto;
             }
         }
     }
@@ -236,7 +237,7 @@
 
         &--inner {
             padding-top: 23px;
-            padding-bottom: 18px;
+            padding-bottom: 27px;
             padding-right: 8px;
         }
 
@@ -283,3 +284,4 @@
         z-index: 300;
     }
 }
+

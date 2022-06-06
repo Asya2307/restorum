@@ -5,7 +5,12 @@
         &-wrap {
             width: 100%;
             padding-left: 38px;
+            @media screen and (max-width: 768px) {
+                padding-left: 10px;
+            }
         }
+
+       
     }
 
     &__input {
@@ -14,17 +19,18 @@
         border: none;
         color: #fff;
         width: 100%;
-        padding: 22px 40px 22px 13px;
+        padding: 12px 40px 12px 13px;
         font-size: 14px;
         line-height: 19px;
         color: #486573;
         text-overflow: ellipsis;
+        height: 48px;
 
-        &::placeholder {
-            color: #486573;
-            font-size: 14px;
-            line-height: 19px;
-        }
+            &::placeholder {
+                color: #698796;
+                font-size: 15px;
+            }
+        
 
         @media screen and (max-width: 1024px) {
            padding-top: 12px;
@@ -32,7 +38,7 @@
         }
 
         @media screen and (max-width: 650px) {
-            padding-right: 65px;
+            padding-right: 45px;
          }
     }
 }

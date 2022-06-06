@@ -61,6 +61,19 @@
                 padding-left: 33px;
                 padding-right: 33px;
 
+                .product__page-bottom {
+                    align-items: flex-end;
+                }
+
+                .product__page-basket {
+                    position: relative;
+                    top: 5px;
+                }
+
+                .product__page-link {
+                    margin-bottom: 7px;
+                }
+
                 @media screen and (max-width: 1366px) {
                     .product__page-bottom {
                         flex-direction: column;

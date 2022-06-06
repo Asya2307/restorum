@@ -192,6 +192,14 @@ $(window).on('load', function () {
         });
     }
 
+    const $filter = $('.js-filter');
+
+    if ($filter) {
+        $filter.on('submit', (e) => {
+            e.preventDefault();
+        })
+    }
+
     const $sortFilter = $('.js-filter-sort');
 
     if ($sortFilter) {

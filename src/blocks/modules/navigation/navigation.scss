@@ -10,8 +10,7 @@
 
     &.fixed {
         position: fixed;
-        top: 235px;
-
+        top: 223px;
 
         &:after {
             content: '';
@@ -59,5 +58,13 @@
         .modal__menu-wrap {
             padding: 9px;
         }
+    }
+
+    &.fixed--allways {
+
+        .modal__menu-wrap {
+            
+        }
+
     }
 }
