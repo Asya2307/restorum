@@ -37,27 +37,12 @@
                     </span>
                     <div class="filter__container">
                         <button class="filter__button js-change-view" data-view="list">
-                            <div class="filter__button-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" viewBox="0 0 231 231" enable-background="new 0 0 231 231">
-                                    <g>
-                                        <rect width="181" x="50" y="164.5" height="33" />
-                                        <rect width="181" x="50" y="99.5" height="33" />
-                                        <rect width="181" x="50" y="32.5" height="33" />
-                                        <rect width="33" y="165.5" height="33" />
-                                        <rect width="33" y="99.5" height="33" />
-                                        <rect width="33" y="32.5" height="33" />
-                                    </g>
-                                </svg>
+                            <div class="filter__button-icon filter__button-icon--list">
                             </div>
                             <span>Список</span>
                         </button>
                         <button class="filter__button js-change-view active" data-view="table">
-                            <div class="filter__button-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
-                                    <path fill-rule="evenodd"
-                                        d="M20,22 C18.8954305,22 18,21.1045695 18,20 C18,18.8954305 18.8954305,18 20,18 C21.1045695,18 22,18.8954305 22,20 C22,21.1045695 21.1045695,22 20,22 Z M20,14 C18.8954305,14 18,13.1045695 18,12 C18,10.8954305 18.8954305,10 20,10 C21.1045695,10 22,10.8954305 22,12 C22,13.1045695 21.1045695,14 20,14 Z M20,6 C18.8954305,6 18,5.1045695 18,4 C18,2.8954305 18.8954305,2 20,2 C21.1045695,2 22,2.8954305 22,4 C22,5.1045695 21.1045695,6 20,6 Z M12,22 C10.8954305,22 10,21.1045695 10,20 C10,18.8954305 10.8954305,18 12,18 C13.1045695,18 14,18.8954305 14,20 C14,21.1045695 13.1045695,22 12,22 Z M12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 Z M12,6 C10.8954305,6 10,5.1045695 10,4 C10,2.8954305 10.8954305,2 12,2 C13.1045695,2 14,2.8954305 14,4 C14,5.1045695 13.1045695,6 12,6 Z M4,22 C2.8954305,22 2,21.1045695 2,20 C2,18.8954305 2.8954305,18 4,18 C5.1045695,18 6,18.8954305 6,20 C6,21.1045695 5.1045695,22 4,22 Z M4,14 C2.8954305,14 2,13.1045695 2,12 C2,10.8954305 2.8954305,10 4,10 C5.1045695,10 6,10.8954305 6,12 C6,13.1045695 5.1045695,14 4,14 Z M4,6 C2.8954305,6 2,5.1045695 2,4 C2,2.8954305 2.8954305,2 4,2 C5.1045695,2 6,2.8954305 6,4 C6,5.1045695 5.1045695,6 4,6 Z" />
-                                </svg>
+                            <div class="filter__button-icon filter__button-icon--table">
                             </div>
                             <span>Таблица</span>
                         </button>
@@ -66,7 +51,7 @@
             </div>
             <div class="filter__main-wrap">
                 <span class="filter__name">
-                    Сортировать по:
+                    Выбрать марку:
                 </span>
                 <div class="filter__select-wrap">
                     <select name="" id="" class="filter__select-main js-filter-select-sort">
@@ -84,7 +69,6 @@
         </form>
     </div>
     <div class="catalog__wrap">
-        <button class="btn catalog__hidden js-modal-catalog-open">Каталог</button>
         <div class="catalog__list-wrap">
             <ul class="catalog__list js-catalog-list">
                 <li class="product__page-item product__page-item--catalog">

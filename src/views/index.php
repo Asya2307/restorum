@@ -30,6 +30,11 @@
             <a href="../pages/main.php">Главная</a>
             <a href="../pages/catalog.php">Каталог</a>
             <a href="../pages/card.php">Карточка</a>
+            <a href="../pages/blog.php">Блог</a>
+            <a href="../pages/blog-item.php">Страница блога</a>
+            <a href="../pages/basket.php">Корзина</a>
+            <a href="../pages/registration.php">Регистрация</a>
+            <a href="../pages/authorization.php">Авторизация</a>
         </div>
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>

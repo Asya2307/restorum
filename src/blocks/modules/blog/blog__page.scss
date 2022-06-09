@@ -145,4 +145,127 @@
             }
         }
     }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -16px;
+        margin-right: -16px;
+
+
+        &-item {
+            display: flex;
+            align-items: stretch;
+            background-color: #f3fafd;
+            overflow: hidden;
+            border-radius: 2px;
+            transition: $transition;
+            width: 100%;
+            max-width: calc(100%/2 - 32px);
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-bottom: 32px;
+            position: relative;
+
+            &:hover {
+                background-color: #fff;
+                box-shadow: 0 0 40px rgba(205, 217, 222, 0.56);
+
+                @media screen and (max-width: 650px) {
+                    .blog__list-info {
+                        background: rgba(243, 250, 253, 1);
+                    }
+                    
+                }
+            }
+
+            @media screen and (max-width: 1280px) {
+                max-width: 100%
+            }
+        }
+
+        &-img {
+            height: 100%;
+            width: 100%;
+            max-width: 210px;
+            border-radius: 2px 0 0 2px;
+
+            img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width: 650px) {
+                max-width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &-info {
+            position: relative;
+            padding: 36px 46px 32px 30px;
+            z-index: 1;
+
+            @media screen and (max-width: 1280px) {
+                padding: 20px;
+            }
+
+            @media screen and (max-width: 650px) {
+                background: rgba(243, 250, 253, 0.8);
+            }
+        }
+
+        &-title {
+            font-size: 24px;
+            line-height: 30px;
+            color: #486573;
+            margin-bottom: 24px;
+            transition: $transition;
+            font-weight: 900;
+            
+            &:hover {
+                color: $action-color;
+            }
+
+            @media screen and (max-width: 1280px) {
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+
+        &-text {
+            color: #353535;
+            max-height: 69px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        &-bottom {
+            display: flex;
+            align-items: center;
+        }
+
+        &-date {
+            font-size: 13px;
+            color: #486573;
+            display: block;
+            margin-right: 17px;
+        }
+
+        &-tag {
+            font-size: 11px;
+            color: #0084c7;
+            text-transform: uppercase;
+            padding: 5px;
+            border-radius: 2px;
+            border: 1px dashed #0084c7;
+            font-weight: 700;
+        }
+    }
 }

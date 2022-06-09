@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Карточка товара</title>
+        <title>Блог</title>
         <meta name="theme-color" content="#c9e0e04d">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -32,14 +32,14 @@
                 @@include("../../blocks/modules/header/header.php")
                 @@include("../../blocks/modules/navigation/navigation-fix.php")
                 @@include("../../blocks/modules/breadcrumbs/breadcrumbs.php")
-                <section class="catalog__wrap">
+                <div class="common__page">
                     <div class="common__container">
-                        <div class="catalog__inner">
-                            @@include("../../blocks/modules/common__accordeon/common__accordeon.php")
-                            @@include("../../blocks/modules/card/card.php")
+                        <h2 class="common__title">Балансировка колес - прихоть или необходимость</h2>
+                        <div class="common__inner">
+                            @@include("../../blocks/modules/blog/blog__item.php")
                         </div>
                     </div>
-                </section>
+                </div>
                 @@include("../../blocks/modules/footer/footer__inside.php")
             </div>
             @@include("../../blocks/modules/modal/modal.php")

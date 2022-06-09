@@ -125,7 +125,7 @@ $(window).on('load', function () {
         const navigationPosition = $navigation.offset().top;
         const navigationHeight = $navigation.outerHeight();
 
-        const calcScroll = (navigationPosition - navigationHeight) - 60;
+        const calcScroll = (navigationPosition - navigationHeight) - 90;
 
         $(window).on('scroll', function () {
 
@@ -349,6 +349,17 @@ $(window).on('load', function () {
                     $(this).val($(this).val().replace(/[^0-9]/g, ''));
                 }
             }); 
+        })
+    }
+
+    const $tagFilter = ('.js-tag');
+
+    if ($tagFilter) {
+        const $tagsButton = $('.js-tag-button');
+
+        $tagsButton.on('click', function() {
+            $tagsButton.removeClass('active');
+            $(this).addClass('active')
         })
     }
 

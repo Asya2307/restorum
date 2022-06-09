@@ -49,7 +49,7 @@ menu {
 
 .common {
     &__container {
-        max-width: 1418px;
+        max-width: 1410px;
         margin-right: auto;
         margin-left: auto;
         width: 100%;
@@ -155,6 +155,11 @@ menu {
         text-transform: uppercase;
         border-bottom: 2px solid $action-color;
         padding-bottom: 1px;
+        transition: $transition;
+
+        &:hover {
+            border-bottom-color: transparent;
+        }
 
         &-btn {
             display: flex;
@@ -189,6 +194,14 @@ menu {
             color: #fff;
             border-bottom-color: #fff;
         }
+    }
+
+    &__inner {
+        margin-top: 26px;
+    }
+
+    &__page {
+        margin-top: -14px;
     }
 }
 

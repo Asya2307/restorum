@@ -6,7 +6,7 @@
         display: flex;
         align-items: center;
         background-color: #f3fafd;
-        padding: 8px 7px 8px 17px;
+        padding: 8px 9px 8px 15px;
         margin-right: 18px;
         border-radius: 2px;
 
@@ -22,6 +22,8 @@
         @media screen and (max-width: 1024px) {
             margin-bottom: 10px;
             width: 100%;
+            flex-direction: row;
+            align-items: center;
         }
     }
 
@@ -59,6 +61,11 @@
             margin-right: 0;
             margin-bottom: 13px;
         }
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 0;
+            margin-right: 8px;
+        }
     }
 
 
@@ -79,19 +86,23 @@
         }
 
         &-icon {
-            width: 17px;
-            height: 17px;
+            width: 13px;
+            height: 13px;
             margin-right: 7px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
 
-            svg {
-                display: block;
-                width: 100%;
-                height: 100%;
+            &--list {
+                width: 16px;
+                height: 17px;
+                background-image: url(/img/img/icons/list.png);
+            }
 
-                path, rect {
-                    fill: $main-color;
-                    transition: $transition;
-                }
+            &--table {
+                width: 14px;
+                height: 12px;
+                background-image: url(/img/img/icons/dots-menu.png);   
             }
         }
 
@@ -104,11 +115,12 @@
             }
 
             .filter__button-icon {
-                svg {
-                    path, rect {
-                        stroke: $prm-color;
-                        fill: $prm-color;
-                    }
+                &--list {
+                    background-image: url(/img/img/icons/list-prm.png);
+                }
+    
+                &--table {
+                    background-image: url(/img/img/icons/dots-menu-prm.png);   
                 }
             }
         }
@@ -131,6 +143,15 @@
             @media screen and (max-width: 1280px) {
                 align-self: baseline;
                 padding-top: 8px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                padding-top: 0;
+
+                .filter__name {
+                    margin-bottom: 8px;
+                    margin-right: 0px;
+                }
             }
 
             @media screen and (max-width: 768px) {
@@ -206,7 +227,7 @@
             margin-bottom: 13px;
         }
 
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 1024px) {
             margin-bottom: 0px;
         }
     }
@@ -321,4 +342,5 @@
 
 .select2-dropdown.filter-main .select2-results {
     padding: 0 5px;
+    font-size: 14px;
 } 

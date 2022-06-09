@@ -1,0 +1,64 @@
+.page {
+    &__content {
+        p {
+            font-size: 16px;
+            color: #353535;
+            line-height: 28px;
+
+            & + h3 {
+                margin-top: 50px;
+            }
+
+            b {
+                font-size: 18px;
+                line-height: 32px;
+                margin-top: 50px;
+                display: block;
+            }
+        }
+
+        img {
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 60px;
+            width: 100%;
+            max-width: 91%;
+
+            @media screen and (max-width: 1024px) {
+                max-width: 100%;
+            }
+        }
+
+        .p_date {
+            color: #698796;
+            font-size: 13px;
+            display: block;
+            margin-bottom: 29px;
+            margin-top: -2px;
+        }
+
+        .p_italy {
+            font-style: italic;
+            color: #353535;
+        }
+
+       h3 {
+        font-size: 24px;
+        font-weight: 400;
+        display: block;
+        margin-bottom: 26px;
+        margin-top: 0;
+       }
+
+       .tags__container-button {
+           display: inline-block;
+           margin-top: 39px;
+
+           &:hover {
+               background: #fff;
+               border: 1px dashed #008ad0;
+               color: #008ad0;
+           }
+       }
+    }
+}
