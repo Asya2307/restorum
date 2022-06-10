@@ -376,7 +376,8 @@ body.blocked_body {
     color: #26353b;
 }
 
-.newmodal_item_checkbox input[type="checkbox"]:checked~label {
+.newmodal_item_checkbox input[type="checkbox"]:checked~label,
+.ordering_form_item_checkbox input[type="checkbox"]:checked~label{
     background-image: url(/img//img/icons/check.png);
 }
 
@@ -437,7 +438,8 @@ body.blocked_body {
     vertical-align: middle;
 }
 
-.autorization_submit  .rusavto_button {
+.autorization_submit  .rusavto_button
+{
     display: block;
     border: none;
     color: #fff;
@@ -456,7 +458,7 @@ body.blocked_body {
 }
 
 
-.autorization_submit .rusavto_button4 {
+.autorization_submit .rusavto_button4, .ordering_submit_block .rusavto_button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,11 +480,12 @@ body.blocked_body {
 }
 
 
+
 .autorization_submit .rusavto_button:hover {
         box-shadow: 0 16px 48px rgba(99, 164, 212, 0), 0 4px 16px rgba(118, 193, 231, 0);
 }
 
-.autorization_submit .rusavto_button4:hover {
+.autorization_submit .rusavto_button4:hover, .ordering_submit_block .rusavto_button:hover {
     background: #76919e;
     color: #fff;
 }

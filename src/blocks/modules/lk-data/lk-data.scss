@@ -1,0 +1,744 @@
+/*тема с правоколоночной плавающей хренью*/
+.rightswinger_block {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+}
+
+.rightswinger_parent {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rightswinger_start {
+    position: relative;
+}
+
+.rightswinger_left_block {
+    
+}
+
+.rightswinger_left_content {
+    
+}
+
+.rightswinger_block_fixed {
+    position: fixed;
+    z-index: 3;
+    overflow: hidden;
+    top: 75px;
+}
+
+.rightswinger_block_bottom {
+    position: absolute;
+}
+
+
+.ordering_sostav_call {
+    width: 180px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    display: none;
+}
+
+.ordering_zakaz_head {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.ordering_zakaz_content {
+    
+}
+
+.ordering_zakaz_item {
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.ordering_zakaz_item:first-child {
+    margin-top: 0;
+}
+
+.ordering_zakaz_item_title {
+    float: left;
+    width: 78%;
+    
+    font-weight: 300;
+    
+    text-align: left;
+}
+
+.ordering_zakaz_item_count {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+    
+}
+
+.ordering_zakaz_item_cost {
+    float: right;
+    font-weight: 900;
+    text-align: right;
+    width: 22%;
+}
+
+.ordering_zakaz_itog {
+    border-top: 1px solid #e9ecef;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.ordering_zakaz_itog .ordering_zakaz_item_title {
+    font-weight: bold;
+    width: 50%;
+}
+
+.ordering_zakaz_mobclose {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url(/img/ordering_mobclose.png);
+    right: 15px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.ordering_warning_block {
+    background-color: #f6ece1;
+    color: #dd5d5d;
+    padding: 25px 25px 15px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-align: center;
+}
+
+.ordering_warning_text {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+.ordering_warning_text strong {
+    font-weight: 900;
+}
+
+.ordering_warning_button {
+    width: 200px;
+    margin: 0 5px 15px;
+    
+}
+
+.ordering_warning_button.rusavto_button {
+    box-shadow: inset 0 -5px 0 0 #008ad0;
+}
+
+.ordering_form_item .rusavto_select {
+    height: 55px;
+    width: 100%;
+}
+
+.ordering_orgia_container {
+    margin-right: 180px;
+}
+
+.ordering_orgia_button {
+    width: 160px;
+    float: right;
+}
+
+.popup_block .rusavto_inputtext {
+    border: 1px solid #e7ebed;
+}
+
+/*стили радиокнопок, взятые со стимула*/
+.ordering_form_item_radio {
+    margin-bottom: 15px;
+}
+
+.ordering_radio_switcher {
+    text-align: justify;
+}
+
+.ordering_radio_switcher .form_buttons_item {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+
+.ordering_radio_switcher .form_buttons_item.ordering_shipping_rightitem {
+    margin-right: 34%;
+}
+
+.ordering_radio_switcher input[type=radio] {
+    display: none;
+}
+
+.ordering_radio_switcher label {
+    display: block;
+    border: 1px solid transparent;
+    padding: 15px 20px 15px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-align: left;
+    cursor: pointer;
+    color: #b1b1bd;
+    background-color: #ffffff;
+}
+
+.ordering_radio_switcher label:hover {
+/*    border-color: #ff343f;*/
+    border-color: #3b3d3e;
+}
+
+.ordering_radio_switcher .clearer {
+    display: inline-block;
+    width: 100%;
+    clear: none;
+}
+
+.ordering_radio_title {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    
+}
+
+.ordering_radio_descr {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.ordering_radio_descr strong {
+    font-weight: 900;
+}
+
+.ordering_radio_switcher input[type="radio"]:checked ~ label {
+    border-color: #5aad77;
+    color: #3b3d3e;
+    
+}
+
+.ordering_radio_switcher input[type="radio"]:disabled ~ label {
+    color: #b1b1bd;
+    border-color: #c5c5c5;
+    background-color: #e9e9e9;
+    cursor: auto;
+}
+
+.ordering_radio_switcher input[type="radio"]:checked ~ label .ordering_radio_title {
+    color: #5aad77;
+}
+
+.ordering_gray_check {
+    margin-top: 20px;
+    padding-left: 28px;
+    background-image: url(/img/ordering_gray_check.png);
+    background-position: left center;
+    line-height: 19px;
+    font-weight: bold;
+    color: #9b9c9c;
+    background-repeat: no-repeat;
+}
+
+.ordering_yourinfo_block {
+    background-color: #ffffff;
+    padding: 30px 35px;
+    margin-bottom: 40px;
+    box-shadow: 0 16px 48px 0 rgba(204, 207, 209, 0.32);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.ordering_yourinfo_head {
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.ordering_yourinfo_item {
+    margin-top: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.ordering_yourinfo_item strong {
+    font-weight: 900;
+    margin-right: 4px;
+}
+
+.ordering_form_item_checkbox input[type="checkbox"], .newmodal_item_checkbox input[type="checkbox"], .filter_item input[type="checkbox"] {
+    display: none;
+}
+
+.ordering_form_item_checkbox label:hover, .filter_item label:hover {
+    text-decoration: underline;
+}
+
+
+.ordering_form_item_checkbox label a {
+    font-weight: 900;
+}
+
+.ordering_form_item_checkbox .field_parent_error{
+    color: red;
+    text-decoration: underline;
+}
+
+.ordering_form_item_checkbox .field_parent_error a {
+    color: red;
+}
+
+.ordering_success_button {
+    width: 200px;
+}
+
+.settings_left_colomn {
+    max-width: 1048px;
+    margin-right: 360px;
+    position: relative;
+}
+
+
+.settings_form_button {
+    width: 250px;
+}
+
+.ordering_form_head {
+    color: #26353b;
+    font-size: 18px;
+font-weight: 700;
+display: block;
+margin-bottom: 20px;
+}
+
+.objectform {
+    box-shadow: 0 0 40px rgba(205, 217, 222, 0.56);
+border-radius: 3px;
+background-color: #ffffff;
+padding: 49px 78px 60px 40px;
+position: relative;
+}
+
+.personal_menu_exit {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.objectform .personal_menu_item_inner {
+    border-radius: 2px;
+    background-color: #f3fafd;
+    color: #008ad0;
+    font-size: 14px;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+}
+
+.objectform .personal_menu_item_inner:before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(/img/img/icons/exit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 4px;
+}
+
+.objectform .personal_menu_item_inner:hover {
+    opacity: .7;
+}
+
+.ordering_form_content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+}
+
+.ordering_form_item_checkbox {
+    width: 100%;
+}
+
+.rusavto_inputtext:read-only {
+    border: none;
+    color: #26353b;
+    font-size: 18px;
+    padding: 0 20px 0 0 ;
+    height: 18px;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    pointer-events: none;
+}
+
+.ordering_form_caption {
+    color: #698796;
+font-size: 14px;
+}
+
+.ordering_form_item_text {
+    width: 100%;
+    max-width: calc(100%/4);
+    margin-bottom: 20px;
+}
+
+.ordering_form_item_checkbox {
+    margin: 20px 0 40px 0;
+}
+
+.ordering_form_block {
+    margin-bottom: 55px;
+}
+
+.ordering_form_block:last-child {
+    margin-bottom: 0;
+}
+
+.modalform {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.ordering__box {
+    width: 100%;
+    max-width: 409px;
+}
+
+.ordering__block {
+    width: 100%;
+    max-width: 371px;
+    padding-top: 13px;
+}
+
+.ordering__box .ordering_form_item {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.ordering__box .ordering_form_item:last-child {
+    margin-bottom: 0px;
+}
+
+.ordering__box .ordering_form_item .rusavto_inputtext {
+    border-radius: 3px;
+    border: 1px solid #e3f2f8;
+    background-color: #f3fafd;
+    height: 54px;
+}
+
+.ordering__box .ordering_form_content {
+    margin-bottom: 40px;
+}
+
+.ordering_form_hint {
+    color: #839aa6;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.ordering_form_descr {
+    color: #3b3d3e;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 24px;
+}
+
+.personal_menu_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal_menu .personal_menu_item {
+    color: #008ad0;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(205, 217, 222, .2);
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: 25px 19px 23px 18px;
+    margin-bottom: 9px;
+    transition: 0.3s;
+    width: 326px;
+}
+
+.personal_menu .personal_menu_item:last-child {
+    margin-bottom: 0;
+}
+
+.personal_menu .personal_menu_item:before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 25px;
+}
+
+.personal_menu .personal_menu_item--order:before {
+    background-image: url(/img/img/icons/shopping-cart.png);
+}
+
+.personal_menu .personal_menu_item--order.personal_menu_item_active {
+    color: #698796;
+}
+
+.personal_menu .personal_menu_item:hover {
+   background-color: #f3fafd;
+}
+
+.personal_menu .personal_menu_item--order.personal_menu_item_active:before {
+    background-image: url(/img/img/icons/shopping-cart-grey.png);
+}
+
+.personal_menu .personal_menu_item--info:before {
+    background-image: url(/img/img/icons/user.png);
+    background-position: 5px;
+}
+
+.personal_menu .personal_menu_item_active {
+    color: #698796;
+    box-shadow: 0 0 40px rgba(205, 217, 222, 0.56);
+}
+
+.personal_menu .personal_menu_item--info.personal_menu_item_active:before {
+    background-image: url(/img/img/icons/user-grey.png);
+}
+
+.ordering_submit_block .rusavto_button {
+    margin-left: 0;
+    height: 56px;
+    border: 2px solid #cdd1d5; 
+
+    &:hover {
+        background-color: #cdd1d5;
+        border-color: #cdd1d5;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .ordering__block {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ordering_form_item_text {
+        max-width: calc(100%/2);
+    }
+
+    .modalform {
+        flex-direction: column-reverse;
+    }
+
+    .ordering_form_hint {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .ordering__box, .ordering__block {
+        max-width: 100%;
+    }
+
+    .ordering__block {
+        padding-left: 0px;
+    } 
+}
+
+@media only screen and (max-width: 520px){
+    .register_form .submiter_container {
+        margin-right: 0;
+    }
+    
+    .register_form #newmodal_item_phone, .register_form #newmodal_item_code {
+        padding-bottom: 70px;
+        position: relative;
+    }
+
+    .register_form #newmodal_item_phone.ordering_form_item_textdis {
+        padding-bottom: 40px;
+    }
+    
+    .register_form .submiter_button, .register_form .submiter_button2, .register_form .submiter_message {
+        width: 100%;
+        top: 70px;
+        position: absolute;
+    }
+    
+    .field_parent_error .submiter_button, .field_parent_error .submiter_button2, .field_parent_error .submiter_message {
+        top: 90px;
+    }
+    
+    .register_form .submiter_message {
+        height: 20px;
+        line-height: 20px;
+    }
+}
+    
+@media only screen and (max-width: 1000px){
+    .personal_right_colomn {
+        position: relative;
+        width: auto;
+    }
+    
+    .personal_menu_block {
+        width: auto;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .personal_menu_who_container {
+        max-width: 600px;
+        padding: 35px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        margin-bottom: 40px;
+    }
+    
+    .personal_menu_who {
+        margin-bottom: 0;
+    }
+    
+    .personal_menu_list {
+        margin-bottom: 30px;
+        flex-direction: row;
+    }
+    
+
+    .personal_menu .personal_menu_item {
+        margin-bottom: 0;
+    }
+    
+    .personal_menu_item:hover {
+        font-weight: normal;
+    }
+    
+    .personal_menu_item.personal_menu_item_active {
+        font-weight: 900;
+    }
+    
+    .personal_menu_item .personal_menu_item_inner {
+        border: 0;
+    }
+    
+    .personal_menu_item_favor .personal_menu_item_inner {
+        background-image: none;
+    }
+    
+    .settings_left_colomn {
+        margin-right: 0;
+    }
+
+    .objectform {
+        padding: 20px;
+    }
+
+    .ordering_form_content {
+        padding-top: 36px;
+    }
+
+    .ordering__box .ordering_form_content {
+        padding-top: 0;
+    }
+
+    .ordering__block {
+        width: 100%;
+        max-width: 371px;
+        padding-top: 0px;
+        padding-left: 20px
+    }
+
+    .ordering_form_hint {
+        margin-top: 0;
+    }
+
+    .ordering__box {
+        max-width: 409px;
+    }
+
+    .modalform {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .personal_menu .personal_menu_item:before {
+        content: none
+    }
+
+    .modalform {
+        flex-direction: column-reverse;
+    }
+
+    .ordering__box, .ordering__block {
+        max-width: 100%;
+    }
+
+    .ordering__block {
+        margin-top: 30px;
+        padding-left: 0;
+    }
+
+    .personal_menu .personal_menu_item {
+        width: unset;
+    }
+
+    .personal_menu_exit span {
+        display: none;
+    }
+
+    .objectform .personal_menu_item_inner:before {
+        margin-right: 0;
+        width: 25px;
+        height: 25px;
+    }
+
+    .ordering_form_item_text {
+        max-width: 100%;
+    } 
+}
+
+@media screen and (max-width: 650px) {
+    .personal_menu_list {
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .personal_menu .personal_menu_item {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .ordering_form_item_checkbox {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+}
+

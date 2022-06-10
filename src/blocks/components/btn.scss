@@ -381,4 +381,33 @@
     &--hidden {
         display: none;
     }
+
+    &__change {
+        display: flex;
+        font-size: 14px;
+        color: #008ad0;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        transition: $transition;
+        position: relative;
+    top: -3px;
+    left: -5px;
+
+        &:before {
+            content: '';
+            display: block;
+            min-width: 16px;
+            height: 16px;
+            background-image: url(/img/img/icons/pen.png);
+            margin-right: 8px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+    }
 }
