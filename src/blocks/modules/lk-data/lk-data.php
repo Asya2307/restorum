@@ -3,9 +3,9 @@
         <div class="rightswinger_block personal_menu_block" data-criswidth="1000">
             <div class="personal_menu">
                 <div class="personal_menu_list">
-                    <a href="/personal/orders" class="personal_menu_item personal_menu_item--order"><span class="personal_menu_item_inner"><span
+                    <a href="/pages/orders.php" class="personal_menu_item personal_menu_item--order"><span class="personal_menu_item_inner"><span
                                 class="personal_menu_item_caption">Мои заказы</span></span></a>
-                    <a href="/personal/settings.html" class="personal_menu_item personal_menu_item--info personal_menu_item_active "><span
+                    <a href="/pages/settings.php" class="personal_menu_item personal_menu_item--info personal_menu_item_active "><span
                             class="personal_menu_item_inner"><span class="personal_menu_item_caption">Личная
                                 информация</span></span></a>
                     

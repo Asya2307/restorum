@@ -114,6 +114,15 @@ menu {
         &-wrap {
             margin-bottom: 32px;
         }
+
+        &-link {
+            color: #0B1C24;
+            transition: $transition;
+
+            &:hover {
+                color: #0083C3;
+            }
+        }
     }
 
     &__section {

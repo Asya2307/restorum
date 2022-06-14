@@ -35,8 +35,8 @@
 
 
         &-list {
-            height: 232px;
-            max-width: 1209px;
+            height: 252px;
+            max-width: 1249px;
             margin: 0 auto;
             width: 100%;
             column-count: 3;
@@ -62,7 +62,7 @@
         }
 
         &-item {
-            margin-bottom: 20px;
+            
         }
 
         &-link {
@@ -71,9 +71,11 @@
             font-size: 16px;
             line-height: 22px;
             transition: $transition;
+            padding: 10px 20px;
+            display: inline-block;
 
             &:hover {
-                opacity: .7;
+                background-color: #0078B3;
             }
         }
 
@@ -103,11 +105,11 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        margin-bottom: 20px;
 
         @media screen and (max-width: 768px) {
             width: 40px;
             min-height: 40px;
-            margin-bottom: 20px;
         }
     }
 }

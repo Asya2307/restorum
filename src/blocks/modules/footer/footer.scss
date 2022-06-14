@@ -118,6 +118,13 @@
 
         &-name {
             color: #fff;
+            display: block;
+            border-bottom: 1px solid transparent;
+            transition: $transition;
+
+            &:hover {
+                border-bottom-color: #fff;
+            }
         }
     }
 

@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Разводная</title>
-        <meta name="theme-color" content="#fff">
+        <title>Личный кабинет - данные</title>
+        <meta name="theme-color" content="#c9e0e04d">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
@@ -23,23 +23,28 @@
         <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=9d49d437-f513-4245-8477-e6cdbafd0623&lang=ru_RU" type="text/javascript"></script>
         <link rel="stylesheet" href="/styles/main.css">
     </head>
     <body>
-        <div class="link__list">
-            <a href="../pages/main.php">Главная</a>
-            <a href="../pages/catalog.php">Каталог</a>
-            <a href="../pages/card.php">Карточка</a>
-            <a href="../pages/blog.php">Блог</a>
-            <a href="../pages/blog-item.php">Страница блога</a>
-            <a href="../pages/basket.php">Корзина</a>
-            <a href="../pages/registration.php">Регистрация</a>
-            <a href="../pages/authorization.php">Авторизация</a>
-            <a href="../pages/settings.php">Личный кабинет - данные</a>
-            <a href="../pages/orders.php">Личный кабинет - заказы</a>
-
+        <div class="main__page">
+            <div class="common__section common__section--inside">
+                @@include("../../blocks/modules/header/header.php")
+                @@include("../../blocks/modules/navigation/navigation-fix.php")
+                @@include("../../blocks/modules/breadcrumbs/breadcrumbs.php")
+                <div class="common__page">
+                    <div class="common__container">
+                        <h2 class="common__title">Личный кабинет</h2>
+                        <div class="common__inner">
+                            @@include("../../blocks/modules/lk-data/lk-order.php")
+                        </div>
+                    </div>
+                </div>
+                @@include("../../blocks/modules/footer/footer__inside.php")
+            </div>
+            @@include("../../blocks/modules/modal/modal.php")
         </div>
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
+        <script src="/js/vendor.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>

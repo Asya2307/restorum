@@ -49,7 +49,7 @@
                 </div>
                 <div class="footer__company">
                     <span class="footer__company-site">Разработка сайта — </span>
-                    <span class="footer__company-name">Айти-Сити</span>
+                    <a href="https://www.it-go.ru/" class="footer__company-name">Айти-Сити</a>
                 </div>
             </div>
         </div>

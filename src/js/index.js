@@ -363,5 +363,9 @@ $(window).on('load', function () {
         })
     }
 
-    
+    $("body").on("click", ".zakaz_item_arrow", function(){
+       var zakaz = $(this).closest(".zakaz_item");
+       $(this).toggleClass("zakaz_item_opened");
+        zakaz.find(".zakaz_item_sostav").stop(false,true).slideToggle(300);
+    });
 })

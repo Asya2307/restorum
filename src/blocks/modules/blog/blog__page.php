@@ -3,7 +3,9 @@
         <div class="blog__page-inner">
             <div class="blog__page-header">
                 <h2 class="common__title">
-                    Статьи
+                    <a href="#" class="common__title-link">
+                        Статьи
+                    </a>
                 </h2>
             </div>
             <div class="swiper blog__page-info js-slider">
@@ -11,8 +13,10 @@
                     <li class="swiper-slide blog__page-item">
                         <div class="blog__page-link">
                             <div class="blog__page-img">
-                                <img src="../img/img/blog/b1.jpg" alt="Почему снижается давление
-                                в дизельном двигателе?">
+                                <a href="#" class="blog__page-img-link">
+                                    <img src="../img/img/blog/b1.jpg" alt="Почему снижается давление
+                                    в дизельном двигателе?">
+                                </a>
                             </div>
                             <div class="blog__page-box">
                                 
@@ -32,7 +36,9 @@
                     <li class="swiper-slide blog__page-item">
                         <div href="#" class="blog__page-link">
                             <div class="blog__page-img">
-                                <img src="../img/img/blog/b2.jpg" alt="Большая немецкая тройка... Ей есть альтернативы?">
+                                <a href="#" class="blog__page-img-link">
+                                    <img src="../img/img/blog/b2.jpg" alt="Большая немецкая тройка... Ей есть альтернативы?">
+                                </a>
                             </div>
                             <div class="blog__page-box">
                                 
@@ -51,7 +57,9 @@
                     <li class="swiper-slide blog__page-item">
                         <div href="#" class="blog__page-link">
                             <div class="blog__page-img">
-                                <img src="../img/img/blog/b3.jpg" alt="Автомобильные колесные диски: эволюция и бренды">
+                                <a href="#" class="blog__page-img-link">
+                                    <img src="../img/img/blog/b3.jpg" alt="Автомобильные колесные диски: эволюция и бренды">
+                                </a>
                             </div>
                             <div class="blog__page-box">
                                     <a href="#" class="blog__page-title">
@@ -69,7 +77,9 @@
                     <li class="swiper-slide blog__page-item">
                         <div href="#" class="blog__page-link">
                             <div class="blog__page-img">
-                                <img src="../img/img/blog/b4.jpg" alt="Шиномонтаж. Критери выбора">
+                                <a href="#" class="blog__page-img-link">
+                                    <img src="../img/img/blog/b4.jpg" alt="Шиномонтаж. Критери выбора">
+                                </a>
                             </div>
                             <div class="blog__page-box">
                                     <a href="#" class="blog__page-title">

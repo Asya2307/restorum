@@ -1,6 +1,6 @@
 .blog {
     &__page {
-        padding-top: 130px;
+        padding-top: 66px;
 
         &-info {
             position: relative;
@@ -29,13 +29,16 @@
         }
 
         &-header {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: -40px; 
+            top: 40px; 
+            position: relative;
+            z-index: 2;
 
             @media screen and (max-width: 650px) {
                 margin-bottom: 25px;
+                top: 0px;
             }
         }
 
@@ -62,12 +65,28 @@
             width: 100%;
             height: 176px;
 
-            img {
+            &-link {
                 display: block;
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
-                object-position: center;
+                overflow: hidden;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    transition: .3s;
+                    transform-origin: center;
+                    
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.05); 
+                    }
+                }
             }
         }
 

@@ -3,7 +3,9 @@
         <div class="product__page-inner">
             <div class="product__page-header">
                 <h2 class="common__title">
-                    Товары со скидкой
+                    <a href="#" class="common__title-link">
+                        Товары со скидкой
+                    </a>
                 </h2>
             </div>
             <div class="swiper product__page-info js-slider">
@@ -11,7 +13,9 @@
                     <li class="swiper-slide product__page-item">
                         <div class="product__page-container">
                             <div class="product__page-img">
-                                <img src="../img/img/product/product__page/p1.png" alt="Установка для раздачи масла NORDBERG 2630AP пневмо 30 л">
+                                <a href="#" class="product__page-img-link">
+                                    <img src="../img/img/product/product__page/p1.png" alt="Установка для раздачи масла NORDBERG 2630AP пневмо 30 л">
+                                </a>
                             </div>
                             <div class="product__page-box">
                                 <a href="#" class="product__page-link">
@@ -33,7 +37,9 @@
                     <li class="swiper-slide product__page-item">
                         <div class="product__page-container">
                             <div class="product__page-img">
-                                <img src="../img/img/product/product__page/p2.png" alt="Установка для раздачи масла NORDBERG 2630AP пневмо 30 л">
+                                <a href="#" class="product__page-img-link">
+                                    <img src="../img/img/product/product__page/p2.png" alt="Установка для раздачи масла NORDBERG 2630AP пневмо 30 л">
+                                </a>
                             </div>
                             <div class="product__page-box">
                                 <a href="#" class="product__page-link">
@@ -55,7 +61,9 @@
                     <li class="swiper-slide product__page-item">
                         <div class="product__page-container">
                             <div class="product__page-img">
-                                <img src="../img/img/product/product__page/p3.png" alt="Установка для раздачи масла NORDBERG 2630AP пневмо 30 л">
+                                <a href="#" class="product__page-img-link">
+                                    <img src="../img/img/product/product__page/p3.png" alt="Установка для раздачи масла NORDBERG 2630AP пневмо 30 л">
+                                </a>
                             </div>
                             <div class="product__page-box">
                                 <a href="#" class="product__page-link">
@@ -77,7 +85,9 @@
                     <li class="swiper-slide product__page-item">
                         <div class="product__page-container">
                             <div class="product__page-img">
-                                <img src="../img/img/product/product__page/p4.png" alt="Установка для раздачи масла NORDBERG 2630AP пневмо 30 л">
+                                <a href="#" class="product__page-img-link">
+                                    <img src="../img/img/product/product__page/p4.png" alt="Установка для раздачи масла NORDBERG 2630AP пневмо 30 л">
+                                </a>
                             </div>
                             <div class="product__page-box">
                                 <a href="#" class="product__page-link">
