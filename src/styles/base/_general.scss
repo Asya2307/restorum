@@ -1,0 +1,331 @@
+.link__list {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $main-font;
+    color: $main-color;
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    min-width: 360px;
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+svg path {
+    fill: inherit;
+}
+
+ul,
+ol,
+nav,
+menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.common {
+    &__section {
+        max-width: 1920px;
+        margin: auto;
+        background-color: #080809;
+    }
+
+    &__container {
+        max-width: 1610px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+
+        @media screen and (max-width: 1440px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }    
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+        max-width: 222px;
+        margin-left: 70px;
+        padding-top: 3px;
+
+        &:before {
+            content: '';
+            display: block;
+            min-width: 14px;
+            height: 16px;
+            background-image: url(../img/svg/location-grey.png);
+            margin-right: 12px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &-inner {
+            color: #4f4f4f;
+            font-size: 12px;
+            line-height: 18px;
+            font-size: 13px;
+            font-family: $main-color;
+        }
+
+        &--footer {
+            max-width: 323px;
+            margin-right: 150px;
+            margin-left: 150px;
+
+            &-inner {
+                color: #fff;
+            }
+
+            &:before {
+                background-image: url(/img/svg/location-prm.png);
+            }
+
+            .social__box {
+                margin-right: 0;
+            }
+
+            .common__location-inner {
+                color: #fff;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+
+        &-link {
+            position: relative;
+            display: inline-flex;
+            color: #e9c169;
+            top: 2px;
+            margin-left: 6px;
+
+            &:before {
+                content: '';
+                width: 16px;
+                height: 16px;
+                background-image: url(/img/img/icons/location-map.png);
+                margin-right: 7px;
+                position: relative;
+                top: 2px;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                width: 71%;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                height: 1px;
+                background-color: $prm-color;
+                transform: scale(0);
+                transform-origin: left center;
+                transition: $transition;
+            }
+
+            &:hover:after {
+                transform: scale(1);
+            }
+        }
+    }
+
+    &__link {
+        font-size: 24px;
+        transition: $transition;
+
+        &--light {
+            color: #fff;
+        }
+
+        &:hover{
+            color: $prm-color;
+        }
+
+        &-block {
+            margin-right: 14px;
+
+            &--footer {
+                margin-right: 0;
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 56px;
+        line-height: 72px;
+        font-family: $title-font;
+        margin: 0;
+
+        &--light {
+            color: #fff;
+        }
+
+        &--grey {
+            color: #5d5d5e;
+        }
+
+        &-box {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__subtitle {
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 30px;
+        font-family: $title-font;
+        margin: 0;
+        
+        &--light {
+            color: #fff;
+        }
+    }
+}
+
+.social {
+
+    &__box {
+        display: flex;
+        align-items: center;
+        margin-right: 54px;
+    }
+
+    &__link {
+        display: flex;
+        
+
+        &-icon {
+            width: 19px;
+            height: 16px;
+            margin-right: 5px;
+
+            svg {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                use {
+                    transition: $transition;
+                }
+            }
+        }
+
+        &-text {
+            color: $prm-color;
+            font-size: 16px;
+            transition: $transition;
+            font-weight: 700;
+        }
+
+        &:hover {
+            
+            .social__link-text {
+                color: #fff;
+            }
+
+            .whatssapp {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+
+.triangle {
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 8px;
+    border-left-width: 8px;
+    border-bottom: 14px solid #fff;
+    position: absolute;
+    top: -3px;
+    left: -11px;
+    transform: rotate(-90deg);
+    margin: auto;
+    z-index: 2;
+    bottom: 0;
+}
+
+.triangle:before {
+    content: '';
+    height: 1px;
+    border-top: 2px solid #ecf6fa;
+    width: 14px;
+    position: absolute;
+    transform: rotate(-41deg);
+    top: 6px;
+    right: -3px;
+}
+
+.triangle:after {
+    content: '';
+    height: 1px;
+    border-top: 2px solid #ecf6fa;
+    width: 12px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 6px;
+    right: -8px;
+}
+
+.preloader__wrap {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    z-index: 3;
+    background: #fff;
+    padding-top: 50px;
+}
+
+.preloader__wrap.active {
+    display: block;
+}
+
+.preloader {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 15px solid #f3fafd;
+    border-top: 15px solid #008ad0;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,125 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    border: none;
+    transition: $transition;
+    background-color: transparent;
+    font-family: $title-font;
+
+    &__call {
+        display: flex;
+        align-items: center;
+        width: 211px;
+        border: 1px solid $prm-color;
+        padding: 15px 10px;
+        border-radius: 2px;
+        font-family: $title-font;
+        font-size: 16px;
+
+        &:hover {
+            border-color: #fff;
+
+            .call {
+                fill: #fff;
+            }
+
+            span {
+                color: #fff;
+            }
+        }
+
+        &-icon {
+            width: 13px;
+            height: 13px;
+            margin-right: 10px;
+
+            svg {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                g {
+                    transition: $transition;
+                }
+            }
+        }
+
+        span {
+            transition: $transition;
+            color: $prm-color;
+        }
+    }
+
+    &__show {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: auto;
+        border: none;
+        padding: 0;
+        transition: $transition;
+        background-color: transparent;
+        text-transform: uppercase;
+        color: $prm-color;
+        font-size: 16px;
+        font-family: $title-font;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -6px;
+            width: 90%;
+            height: 1px;
+            transform: scale(0);
+            transition: $transition;
+            background-color: $prm-color;
+            transform-origin: center left;
+        }
+
+        &:after {
+            content: "";
+            width: 6px;
+            height: 14px;
+            background-image: url(/img/img/icons/arrow-btn.png);
+            background-position: center;
+            margin-left: 16px;
+        }
+
+        &-container {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        &:hover:before {
+            transform: scale(1);
+        }
+    }
+
+    &--prm {
+        padding: 17px 26px 17px 27px;
+        box-shadow: 0 16px 40px rgba(234, 192, 105, 0.56), inset 0 -4px 0 rgba(234, 192, 105, 0.35);
+        border-radius: 2px;
+        background-image: linear-gradient(to right, #efca6d, $prm-color);
+        border-bottom: 3px solid #eac069;
+
+        &:hover {
+            box-shadow: 0 16px 40px transparent, inset 0 -4px 0 transparent;
+        }
+        
+
+        .btn__text {
+            color: $main-color;
+            font-size: 16px;
+        }
+    }
+
+
+    span {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}

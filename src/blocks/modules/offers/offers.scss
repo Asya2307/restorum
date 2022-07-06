@@ -1,0 +1,98 @@
+.offers {
+    &__section {
+        background-color: #101012;
+        &-inner {
+            padding: 110px 0 126px 0;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        color: #5d5d5e;
+        display: block;
+        margin-bottom: 52px;
+        max-width: 81%;
+        margin-top: 44px;
+    }
+
+    &__step {
+        &-title {
+            font-size: 24px;
+            color: #ffffff;
+            font-family: $title-font;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 64px;
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        &-item {
+            width: 100%;
+            max-width: calc(100%/4 - 30px);
+            margin-right: 15px;
+            margin-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        &-button {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 96px;
+            border: 1px dashed #3b3b45;
+            transition: $transition;
+            border-radius: 2px;
+            padding-left: 33px;
+            background-color: transparent;
+
+            &:hover, &.active {
+                border-color: $prm-color;
+                .offers__step-icon, .offers__step-text {
+                    filter: grayscale(1);
+                }
+            }
+        }
+
+        &-icon {
+            min-width: 40px;
+            height: 40px;
+            margin-right: 23px;
+            transition: $transition;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-text {
+            color: $prm-color;
+            font-size: 16px;
+            line-height: 24px;
+            transition: $transition;
+        }
+
+        &-subtitle {
+            color: #5d5d5e;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 47px;
+
+            span {
+                color: #ffffff;
+                font-weight: 700;
+            }
+        }
+    }
+}

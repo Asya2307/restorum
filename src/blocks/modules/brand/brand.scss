@@ -1,0 +1,126 @@
+.brand {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 33%;
+        margin-bottom: 53px;
+
+        .main__slider-arrow-wrap {
+            position: relative;
+            width: unset;
+            margin: 0;
+        }
+
+        .main__slider-arrow {
+            width: 56px;
+            height: 56px;
+            border: 1px solid $main-color;
+            background-color: transparent;
+
+            &:hover {
+                background-color: $main-color;
+
+                .arrow-slider {
+                    
+                    fill: #fff;
+                }
+            }
+
+            .arrow-slider {
+                fill: $main-color;
+            }
+
+            svg {
+                width: 20px;
+                height: 14px;
+            }
+
+            &.swiper-button-disabled {
+                opacity: 0.2;
+                cursor: default;
+    
+                &:hover {
+                    background-color: transparent;
+    
+                    .arrow-slider {
+                    
+                        fill: $main-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &__section-box {
+        background-color: #f2f2f4;
+        padding: 73px 0 94px 100px;
+    }
+
+    &__slider {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100%;
+            background-image: linear-gradient(to right, transparent 0%, #f2f2f4 50%);
+        }
+
+
+        &-item {
+            width: 148px;
+        }
+
+        &-button {
+            display: block;
+            position: relative;
+            width: 100%;
+            border: none;
+            padding: 0;
+
+            &:hover, &.active {
+                .brand__slider-img {
+                    border: 1px dashed $prm-color;
+                }
+
+                .brand__slider-title {
+                    color: $prm-color;
+                }
+            }
+        }
+
+        &-img {
+            position: relative;
+            width: 100%;
+            border: 1px dashed transparent;
+            transition: $transition;
+            margin-bottom: 8px;
+            background-color: #fff;
+
+            &:after {
+                content: "";
+                display: block;
+                padding-bottom: 86%;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-title {
+            transition: $transition;
+            font-size: 14px;
+        }
+    }
+}
